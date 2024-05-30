@@ -1,0 +1,75 @@
+.searchBar {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+#searchBookByStr {
+    width: 100%;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--blue);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+svg {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+#searchInput {
+    position: relative;
+    bottom: 0;
+    transition: 0.1s;
+    width: 400px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding: 0 10px;
+    font-size: 16px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+#searchInput:hover {
+    bottom: 5px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.flex {
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.searchButton {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.searchButton {
+    position: relative;
+    bottom: 0;
+    transition: bottom 0.1s;
+    
+}
+
+.searchButton:hover {
+    bottom: 5px;
+}
+
+.searchText {
+    position: relative;
+    bottom: 0;
+    transition: 0.1s;
+    margin-bottom: 15px;
+    text-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    font-size: 30px;
+}
+
+.searchText:hover {
+    bottom: 5px;
+}

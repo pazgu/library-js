@@ -1,0 +1,59 @@
+@import url(/ajax_project/css/spinner.css);
+@import url(/ajax_project/css/navbar.css);
+@import url(/ajax_project/css/bookCard.css);
+@import url(/ajax_project/css/searchBar.css);
+@import url(/ajax_project/css/showBookProperties.css);
+@import url(/ajax_project/css/snackbar.css);
+@import url(/ajax_project/css/pagination.css);
+@import url(/ajax_project/css/addNewBook.css);
+@import url(/ajax_project/css/history.css);
+@import url(/ajax_project/css/searchByISBN.css);
+@import url(/ajax_project/css/showCategories.css);
+
+:root {
+  --light-yellow: #FFFAE6;
+  --light-orange: #FF9F66;
+  --orange: #FF5F00;
+  --blue: #002379;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  background: rgb(231,203,94);
+  background: linear-gradient(90deg, rgba(231,203,94,1) 0%, rgba(255,159,102,0.7820378151260504) 53%, rgba(255,95,0,1) 100%);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  min-width: 620px;
+
+}
+
+.hidden {
+  display: none;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+}
+
+.black {
+  background-color: black;
+  z-index: 800;
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh; 
+  opacity: 40%;
+}
+
+.blacktwo {
+  background-color: black;
+  z-index: 802;
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh; 
+  opacity: 40%;
+}

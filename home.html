@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="snackbar"></div>
+    <div class="showBookProperties hidden" id="showBookProperties"></div>
+    <div class="black hidden" onclick="closeBook()"></div>
+
+    <nav class="navBar">
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="addbook.html">Add book</a></li>
+        <li><a href="history.html">History</a></li>
+        <li><a href="favorites.html">Favorites</a></li>
+      </ul>
+    </nav>
+
+    <div class="popupBook" id="popupBook"></div>
+
+    <div class="searchBar">
+      <form id="searchBookByStr">
+        <label class="searchText" for="searchInput">Search a book</label>
+        <div class="flex">
+          <input id="searchInput" type="text" />
+          <button class="searchButton" type="submit">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="currentColor"
+              class="bi bi-search"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+              />
+            </svg>
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <div class="spinner hidden" id="spinner"></div>
+    <div class="showCategories hidden">
+      <label for="" class="labelCat">Sort by Category: </label>
+      <select id="categoryFilter">
+        <option value="">All Categories</option>
+        <option value="Business & Economics">Business & Economics</option>
+        <option value="Computers">Computers</option>
+        <option value="Education">Education</option>
+        <option value="Language Arts & Disciplines">
+          Language Arts & Disciplines
+        </option>
+        <option value="Law">Law</option>
+        <option value="Literary Collections">Literary Collections</option>
+        <option value="Medical">Medical</option>
+        <option value="Reference">Reference</option>
+        <option value="Science">Science</option>
+        <option value="Social Science">Social Science</option>
+      </select>
+    </div>
+    <div id="displayBooksBySearch" class="displayBooksBySearch"></div>
+    <div class="pagination">
+      <button id="prevPage" class="prevPage hidden">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="30"
+          height="30"
+          fill="currentColor"
+          class="bi bi-arrow-left-circle"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z"
+          />
+        </svg>
+      </button>
+      <span id="pageNumber"></span>
+      <button id="nextPage" class="nextPage hidden">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="30"
+          height="30"
+          fill="currentColor"
+          class="bi bi-arrow-right-circle"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"
+          />
+        </svg>
+      </button>
+    </div>
+
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="/ajax_project/js/manageBooks.js"></script>
+  </body>
+</html>

@@ -1,0 +1,45 @@
+.displayBooksBySearch {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding-bottom: 15px;
+}
+
+.bookCard {
+    position: relative;
+    bottom: 0;
+    transition: 0.1s;
+    background: rgb(255,95,0);
+    background: linear-gradient(90deg, rgba(255,95,0,1) 0%, rgba(255,159,102,0.8800770308123249) 43%, rgba(231,203,94,1) 100%);
+    color: var(--blue);
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    text-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    display: flex;
+    width: 400px;
+    height: 200px;
+    padding: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.bookCard:hover {
+    bottom: 5px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+img {
+    width: 120px;
+    height: 200px;
+    border-radius: 10px;
+    margin-right: 10px;
+    padding-bottom: 10px;
+}
+
+.bookProperties p {
+    font-size: 12px;
+}
+
+.bookProperties h2 {
+    font-size: 16px;
+}

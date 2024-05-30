@@ -1,0 +1,97 @@
+.searchbyisbn {
+    transition: 0.1s;
+    display: flex;
+    position: absolute;
+    top: 80px;
+    left: 10%;
+    flex-direction: column;
+    width: 1200px;
+    background: rgb(255,194,157);
+    background: linear-gradient(90deg, rgba(255,194,157,1) 0%, rgba(255,148,85,0.9417016806722689) 52%, rgba(231,203,94,1) 100%);
+    padding: 10px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    z-index: 801;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    flex-wrap: wrap;
+    gap: 20px;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 15px;
+}
+
+.searchbyisbn button {
+    position: absolute;
+    bottom: 93%;
+    left: 90%;
+    top: -5%;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.showBookPropertiesTwo {
+    transition: 0.1s;
+    display: flex;
+    position: absolute;
+    top: 80px;
+    left: 23%;
+    flex-direction: column;
+    width: 800px;
+    background: rgb(255,194,157);
+    background: linear-gradient(90deg, rgba(255,194,157,1) 0%, rgba(255,148,85,0.9417016806722689) 52%, rgba(231,203,94,1) 100%);
+    padding: 10px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    z-index: 803;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.showBookPropertiesTwo p {
+    text-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    position: relative;
+    bottom: 0;
+    transition: 0.1s;
+}
+
+.showBookPropertiesTwo p:hover {
+    bottom: 5px;
+}
+
+.addToData {
+    position: relative;
+    width: 200px;
+    bottom: 0;
+    margin: 10px;
+    padding: 15px 30px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    border-radius: 10px;
+    display: block;
+    border: 0px;
+    font-weight: 700;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    background-image: linear-gradient(45deg, #FF512F 0%, #F09819  51%, #FF512F  100%);
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.addToData:hover {
+  background-position: right center;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  bottom: 5px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.addToData:active {
+  transform: scale(0.95);
+}

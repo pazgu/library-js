@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add a book</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="snackbar"></div>
+    <div class="searchbyisbn hidden" id="searchbyisbn">
+      <button class="close" onClick="closeBook()"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+        <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+      </svg></button>
+    </div>
+    <div class="showBookPropertiesTwo hidden" id="showBookPropertiesTwo"></div>
+    <div class="black hidden" onclick="closeBook()"></div>
+    <div class="blacktwo hidden" onclick="closeBookTwo()"></div>
+       <nav class="navBar">
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="addbook.html">Add book</a></li>
+        <li><a href="history.html">History</a></li>
+        <li><a href="favorites.html">Favorites</a></li>
+      </ul>
+    </nav>
+    <div class="div-container">
+   
+    <div class="container">
+      <h2 class="addNewBook">Add New Book Manually</h2>
+    <form id="createBookForm" class="createBookForm">
+      <input type="text" id="createBookTitle" placeholder="Title" required />
+      <input
+        type="text"
+        id="createBookAuthor"
+        placeholder="Authors (comma-separated)"
+        required
+      />
+      <input
+        type="number"
+        id="createBookNumPages"
+        placeholder="Number of Pages"
+        required
+      />
+      <input
+        type="text"
+        id="createBookDescription"
+        placeholder="Short Description"
+        required
+      />
+      <input type="url" id="createBookImage" placeholder="Image URL" required />
+      <input
+        type="text"
+        id="createBookCategories"
+        placeholder="Categories (comma-separated)"
+        required
+      />
+      <input type="text" id="createBookISBN" placeholder="ISBN" />
+      <input
+        type="number"
+        id="createBookNumCopies"
+        placeholder="Number of Copies"
+        required
+      />
+      <button type="submit" class="addButton">Add</button>
+    </div>
+    
+    </form>
+    <div class="right">
+      <h2 class="addNewBookByISBN">Add New Book From Google API</h2>
+      <form action="submit" id="searchBook" class="searchBookByISBN">
+        <input type="text" id="createBookName" placeholder="Book Name or ISBN" required/>
+        <button type="submit" class="addButton">Search</button>
+      </form>
+      
+    </div>
+    </div>
+
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="/ajax_project/js/addbook.js"></script>
+  </body>
+</html>

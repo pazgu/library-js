@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>History</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="navBar">
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="addbook.html">Add book</a></li>
+        <li><a href="history.html">History</a></li>
+        <li><a href="favorites.html">Favorites</a></li>
+      </ul>
+    </nav>
+
+    <div class="table-container">
+      <table id="operations">
+        <thead>
+          <tr>
+            <th id="id-header">Id</th>
+            <th id="operation-header">Operation</th>
+            <th id="time-header">Time</th>
+            <th id="bookId-header">Book Id</th>
+          </tr>
+          <tr>
+            <th>
+              <input
+                type="text"
+                id="id-filter"
+                class="filter"
+                placeholder="Filter by Id"
+              />
+            </th>
+            <th>
+              <input
+                type="text"
+                id="operation-filter"
+                class="filter"
+                placeholder="Filter by Operation"
+              />
+            </th>
+            <th>
+              <input
+                type="text"
+                id="time-filter"
+                class="filter"
+                placeholder="Filter by Time"
+              />
+            </th>
+            <th>
+              <input
+                type="text"
+                id="bookId-filter"
+                class="filter"
+                placeholder="Filter by Book Id"
+              />
+            </th>
+          </tr>
+        </thead>
+        <tbody id="tbody"></tbody>
+      </table>
+    </div>
+
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="/ajax_project/js/history.js"></script>
+  </body>
+</html>

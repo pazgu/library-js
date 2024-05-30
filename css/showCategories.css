@@ -1,0 +1,45 @@
+.showCategories {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.labelCat {
+    color: var(--blue);
+    margin-right: 10px;
+}
+
+select {
+    position: relative;
+    bottom: 0;
+    transition: 0.1s;
+    appearance: none;
+    border: 0;
+    outline: 0;
+    font: inherit;
+    font-weight: bold;
+    color: var(--blue);
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    width: 200px;
+    padding: 1rem 4rem 1rem 1rem;
+    background: var(--arrow-icon) no-repeat right 0.8em center / 1.4em,
+      linear-gradient(to left, var(--arrow-bg) 3em, var(--select-bg) 3em);
+    cursor: pointer;
+    &::-ms-expand {
+      display: none;
+    }
+    &:focus {
+      outline: none;
+    }
+    option {
+      color: inherit;
+      background-color: var(--option-bg);
+    }
+  }
+  
+  select:hover {
+    bottom: 5px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }

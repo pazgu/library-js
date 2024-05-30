@@ -1,0 +1,60 @@
+/* <nav class="navBar">
+<ul>
+  <li><a href="home.html">Home</a></li>
+  <li><a href="addbook.html">Add book</a></li>
+  <li><a href="history.html">History</a></li>
+  <li><a href="favorites.html">Favorites</a></li>
+</ul>
+</nav> */
+
+nav {
+    display: flex;
+    justify-content: center;
+    background: rgb(231,203,94);
+    background: linear-gradient(90deg, rgba(231,203,94,1) 0%, rgba(255,159,102,0.7820378151260504) 53%, rgba(255,95,0,1) 100%);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    height: 75px;
+    margin-bottom: 16px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+li {
+  display: flex;
+  height: 50%;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 30px;
+  margin: 10px;
+  position: relative;
+  bottom: 0;
+  transition: 0.1s;
+}
+
+li:hover {
+  bottom: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--blue);
+  font-size: 20px;
+  font-weight: bold;
+  text-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+
+}
+
+@media only screen and (max-width: 585px) {
+  ul {
+    gap: 15px;
+  }
+  li {
+    width: 60px;
+  }
+}

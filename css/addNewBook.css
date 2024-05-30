@@ -1,0 +1,130 @@
+.div-container {
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.addNewBook, .addNewBookByISBN {
+    width: 100%;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--blue);
+    font-size: 30px;
+    font-weight: bold;
+    position: relative;
+    bottom: 0;
+    transition: 0.1s;
+    margin-bottom: 15px;
+    text-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.addNewBookByISBN {
+    margin-bottom: 26px;
+}
+
+.addNewBook:hover, .addNewBookByISBN:hover {
+    bottom: 5px;
+}
+
+.createBookForm {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+#createBookTitle, #createBookAuthor, #createBookNumPages, #createBookDescription, #createBookImage, #createBookCategories, #createBookNumCopies, #createBookISBN, #createBookName {
+    position: relative;
+    bottom: 0;
+    transition: 0.1s;
+    width: 450px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding: 0 10px;
+    font-size: 16px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+#createBookTitle:hover, #createBookAuthor:hover,  #createBookNumPages:hover, #createBookDescription:hover, #createBookImage:hover, #createBookCategories:hover, #createBookNumCopies:hover, #createBookISBN:hover, #createBookName:hover {
+    bottom: 5px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.addButton {
+    position: relative;
+    width: 200px;
+    bottom: 0;
+    margin: 10px;
+    padding: 15px 30px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    border-radius: 10px;
+    display: block;
+    border: 0px;
+    font-weight: 700;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    background-image: linear-gradient(45deg, #FF512F 0%, #F09819  51%, #FF512F  100%);
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.addButton:hover {
+  background-position: right center;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  bottom: 5px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.addButton:active {
+  transform: scale(0.95);
+}
+
+.searchBookByISBN {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchBookByISBN input {
+    margin-bottom: 20px;
+}
+
+
+@media only screen and (max-width: 1150px) {
+    #createBookTitle, #createBookAuthor, #createBookNumPages, #createBookDescription, #createBookImage, #createBookCategories, #createBookNumCopies, #createBookISBN, #createBookName {
+        width: 300px;
+    }
+}
+@media only screen and (max-width: 850px) {
+    #createBookTitle, #createBookAuthor, #createBookNumPages, #createBookDescription, #createBookImage, #createBookCategories, #createBookNumCopies, #createBookISBN, #createBookName {
+        width: 200px;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    #createBookTitle, #createBookAuthor, #createBookNumPages, #createBookDescription, #createBookImage, #createBookCategories, #createBookNumCopies, #createBookISBN, #createBookName {
+        width: 150px;
+}
+    .addButton {
+        width: 150px;
+    }
+}

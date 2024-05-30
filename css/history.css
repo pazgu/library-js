@@ -1,0 +1,86 @@
+.table-container {
+    display: flex;
+    justify-content: center;
+    overflow-y: auto;
+    height: 600px;
+}
+
+table {
+    width: 800px;
+    border-collapse: collapse;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    text-align: center;
+    vertical-align: middle; 
+}
+
+th {
+	padding: 10px;
+}
+
+thead {
+    background: rgb(231, 203, 94);
+    background: linear-gradient(90deg, rgba(231, 203, 94, 1) 0%, rgba(255, 159, 102, 0.78) 53%, rgba(255, 95, 0, 1) 100%);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+tbody {
+    tr {
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+    }
+    td {
+        position: relative;
+        
+        &:hover {
+            &:before {
+                content: "";
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: -9999px;
+                bottom: -9999px;
+                background-color: rgba(255, 255, 255, 0.2);
+                z-index: -1;
+            }
+        }
+    }
+}
+
+/* Custom scrollbar styles */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.filter {
+    transition: 0.1s;
+    width: 100px;
+    height: 20px;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    font-size: 10px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+	padding: 0;
+	
+}
+
+.filter:hover {
+	bottom: 5px;
+}
